@@ -1,7 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { User } from '../models/user.js';
 import jwt from 'jsonwebtoken';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs'; // Use bcryptjs instead of bcrypt
+
 
 // Login function
 export const login = async (req: Request, res: Response) => {
